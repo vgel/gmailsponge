@@ -2,7 +2,7 @@
 
 A tool for cleaning up your inbox. Very hacky and experimental, use at your own risk. Made With Claude™
 
-![](media/screenshot.png)
+![](media/hero.png)
 
 ## Getting Started
 
