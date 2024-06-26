@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Gmail Archiver Assistant",
+  "name": "GmailSponge",
   "version": "1.0",
-  "description": "An AI-powered assistant to help you select emails for archiving in Gmail",
+  "description": "An AI-powered assistant to help you select emails in Gmail",
   "permissions": [
     "storage",
     "activeTab"

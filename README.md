@@ -1,4 +1,4 @@
-# Email Archiver for Gmail
+# GmailSponge
 
 A tool for cleaning up your inbox. Very hacky and experimental, use at your own risk. Made With Claude™
 

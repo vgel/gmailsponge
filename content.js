@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         console.error('Error in processEmails:', error);
         sendResponse({status: 'error', message: error.toString(), details: error.details});
       });
-    return true;  // Indicates we will send a response asynchronously
+    return true;  // will send a response asynchronously
   }
 });
 
@@ -22,7 +22,6 @@ async function processEmails(prompt) {
   let emailList = [];
 
   emailRows.forEach((row, index) => {
-    // Updated subject extraction
     const subjectElement = row.querySelector('span[data-thread-id]');
     const subject = subjectElement ? subjectElement.textContent.trim() : 'No subject';
     
