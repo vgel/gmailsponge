@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gmail Archiver Assistant Settings</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: 0 auto; }
+    .prompt { margin-bottom: 10px; padding: 10px; background-color: #f0f0f0; border-radius: 5px; }
+    input[type="text"], select, textarea { width: 100%; margin-bottom: 10px; }
+    textarea { height: 100px; }
+    button { margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Gmail Archiver Assistant Settings</h1>
+
+  <h2>API Settings</h2>
+  <div>
+    <label for="model">Model:</label>
+    <select id="model">
+      <option value="claude-3-opus-20240229">Claude 3 Opus</option>
+      <option value="claude-3-sonnet-20240229">Claude 3 Sonnet</option>
+      <option value="claude-3-haiku-20240307">Claude 3 Haiku</option>
+    </select>
+  </div>
+  <div>
+    <label for="endpoint">Endpoint:</label>
+    <input type="text" id="endpoint" value="https://api.anthropic.com/v1/messages">
+  </div>
+  <div>
+    <label for="apiKey">API Key:</label>
+    <input type="password" id="apiKey">
+  </div>
+
+  <button id="save">Save Settings</button>
+
+  <h2>Prompts</h2>
+  <h3>Add New Prompt</h3>
+  <form id="promptForm">
+    <input type="text" id="promptName" placeholder="Enter prompt name" required>
+    <textarea id="promptText" placeholder="Enter prompt text" required></textarea>
+    <button type="submit">Add Prompt</button>
+  </form>
+
+  <h3>Existing Prompts</h3>
+  <div id="prompts"></div>
+
+  <script src="options.js"></script>
+</body>
+</html>
