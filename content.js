@@ -1,6 +1,6 @@
 console.log('Content script loaded');
 
-chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
+chrome.runtime.onMessage.addListener((request, _sender, sendResponse) => {
   console.log('Message received in content script:', request);
   if (request.action === "runPrompt") {
     processEmails(request.prompt)
